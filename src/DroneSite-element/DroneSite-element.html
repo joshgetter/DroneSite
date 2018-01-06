@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="DroneSite-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class DroneSiteElement extends Polymer.Element {
+      static get is() { return 'DroneSite-element'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'DroneSite-element'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(DroneSiteElement.is, DroneSiteElement);
+  </script>
+</dom-module>
