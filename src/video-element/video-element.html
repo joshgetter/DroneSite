@@ -1,0 +1,53 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="video-element">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+            #video-background{
+                height: 100%;
+                width: 100%;
+                opacity:.6;
+            }
+            text{
+                position: absolute;
+                top: 50%;
+                font-size: 800%;
+                transform: translate(0%, -50%);
+                text-align: center;
+            }
+        </style>
+        <text>[[overlayText]]</text>
+        <video autoplay loop id="video-background" muted plays-inline>
+            <source src="/videos/[[source]]">
+        </video>
+    </template>
+
+    <script>
+        /**
+         * @customElement
+         * @polymer
+         */
+        class MovieElement extends Polymer.Element {
+            static get is() { return 'video-element'; }
+            static get properties() {
+                return {
+                    overlayText: {
+                        type: String
+                    },
+                    source:{
+                        type: String,
+                        observer: "test"
+                    }
+                };
+                function test(){
+                    console.log("test");
+                }
+            }
+        }
+
+        window.customElements.define(MovieElement.is, MovieElement);
+    </script>
+</dom-module>
