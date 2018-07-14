@@ -1,0 +1,23 @@
+{
+  "description": "Feature drone photography.",
+  "name": "@polymer/dronesite",
+  "version": "",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/iron-flex-layout": "^3.0.0-pre.18",
+    "@polymer/app-layout": "^3.0.0-pre.18",
+    "@polymer/paper-icon-button": "^3.0.0-pre.18",
+    "@polymer/iron-icons": "^3.0.0-pre.18"
+  },
+  "devDependencies": {
+    "wct-browser-legacy": "^1.0.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  }
+}

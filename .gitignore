@@ -3,3 +3,5 @@ bower_components
 .idea/inspectionProfiles/
 .idea/workspace.xml
 videos
+
+node_modules
